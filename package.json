@@ -1,0 +1,28 @@
+{
+  "name": "streams2-splice",
+  "version": "1.0.0",
+  "description": "Splice or replace portions of a stream with static data or another stream",
+  "main": "./lib/splice-stream.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "jshint": "^2.8.0",
+    "should": "^7.0.1"
+  },
+  "scripts": {
+    "test": "mocha -u bdd -R spec --bail test/*.js",
+    "report": "istanbul cover node_modules/.bin/_mocha -- -u bdd -R spec --bail test/*.js;jshint lib"
+  },
+  "keywords": [
+    "splice",
+    "replace",
+    "stream",
+    "streams2"
+  ],
+  "author": "Kris Reeves",
+  "license": "ISC"
+}
